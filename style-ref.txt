@@ -1,0 +1,4 @@
+primary - #673AB7
+pdark - #512DA8
+acc - #E040FB
+bg - #25333c
