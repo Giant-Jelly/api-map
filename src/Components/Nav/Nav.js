@@ -7,11 +7,11 @@ const styles = {
 		width: '100%',
 		height: '60px',
 		display: 'block',
-		'padding': '10px'
+		'padding': '10px',
+		'text-align': 'center'
 	},
 	'logo':{
 		width: '60px',
-		color: '#fff',
 		float: 'left',
 		'margin-right': '20px'
 	},
@@ -24,10 +24,14 @@ const styles = {
 	},
 	'navListItemText': {
 		display: 'block',
-	    color: 'white',
+	    color: '#111',
 	    'text-align': 'center',
 	    padding: '20px 16px',
 	    'text-decoration': 'none',
+	    'cursor': 'pointer',
+	    '&:hover': {
+	    	color: '#fff'
+	    }
 	}
 }
 
@@ -36,10 +40,10 @@ const Nav = ({classes}) =>
 		<img src="assets/logo.png" className={classes.logo} />
 		<ul className={classes.navList}>
 			<li className={classes.navListItem}>
-				<a className={classes.navListItemText}>Home</a>
+				<a className={classes.navListItemText}>Documentation</a>
 			</li>
 			<li className={classes.navListItem}>
-				<a className={classes.navListItemText}>Login</a>
+				<a className={classes.navListItemText}>Editor</a>
 			</li>
 		</ul>
 	</div>
